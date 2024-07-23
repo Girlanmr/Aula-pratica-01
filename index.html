@@ -3,33 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laços de repetição, While, For e Do</title>
+    <title>Funções</title>
 </head>
 <body>
 <script>
 window.onload = function(){
-   
-   var repeticao = 0;
-   var nome = '';
 
-   //While -> Precisamos de uma variável inicial.
-   /*
-   while(nome == 'azul'){
-    console.log("Olá mundo");
-    nome = 'verde';
-   }
-   console.log("Cheguei ao final!");
-   */
   /*
-  for(var numero = 0; numero <10; numero++){
-    console.log("Olá mundo!");
-  }
+  var variavel = function(){
+    console.log("Minha funcao através da variável");
+  };
   */
  /*
- do{
-  console.log("Olá mundo");
- }while(nome == 'azul');
- */
+ function teste(num1,num2){
+  return num1+num2;
+}
+
+var variavel = teste(10,20);
+console.log(variavel);
+*/
+/*
+var obj = {'nome':'Azul','idade':23};
+obj.func = function(){
+  console.log('minha funcao');
+}
+obj.func();
+*/
+
+var variavel =[];
+variavel[0] =[];
+variavel[0][2] = 'Azul';
+console.log(variavel[0][2]);
 }
 </script>
 <p>Laços de repetição, While, For e Do</p>
